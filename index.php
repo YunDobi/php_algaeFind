@@ -4,6 +4,7 @@
   <body>
     <div class= "leftBox">
       <h2>Algea Finder</h2>
+      <h3>01. Choose what you want to increase</h3>
     </div>
 
   <div class="contentBox">

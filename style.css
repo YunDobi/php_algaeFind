@@ -11,9 +11,9 @@ body {
   width: 40%;
   height: 100vh;
   position: absolute;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .contentBox {
   width: 60%;
@@ -30,20 +30,24 @@ body {
 }
 .button:hover {
   cursor: pointer;
-  border: 2px solid #027d61;
+  border: 3px solid #027d61;
 }
 
 .buttonList {
   display: flex;
   justify-content: space-around;
 }
+.content {
+  animation: fadeInAnimation ease 3s;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
 
-/* .buttonWrapper {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
