@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.leftBox {
+  background-color: green;
+  width: 40%;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox {
+  width: 60%;
+  margin-left: 40%;
+  padding: 50px;
+}
+
+.button {
+  background-color: grey;
+  border: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.button:hover {
+  cursor: pointer;
+  border: 2px solid #027d61;
+}
+
+.buttonList {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .buttonWrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
