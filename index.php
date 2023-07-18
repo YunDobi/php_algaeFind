@@ -11,6 +11,7 @@
   <div class="contentBox">
 
     <?php
+      $url = "";
           if(array_key_exists('button1', $_POST)) {
             include("loss.php");
           }

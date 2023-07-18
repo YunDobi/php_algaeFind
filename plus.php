@@ -6,17 +6,32 @@
   <title>Document</title>
 </head>
 <body>
-  <div>
+
   <?php
       include("goback.php")
     ?>
+
+  <div class="content">
     <div class="item_content">
       <img style="width: 50%; height: 50%" src="https://cdn11.bigcommerce.com/s-yvary2y55h/images/stencil/2560w/products/113/1877/02AP_ProductCarousel__24632.1651681811.jpg?c=1" alt="">
+
+      <div class="text_contnet">
+        <h2 style="margin-bottom: 40px">Bone Builder Pack</h2>
+        <h3>Increase Bone Density</h3><br>
+
+        <div class="temp">
+        <p>Rock-based calcium can only slow bone loss. But AlgaeCal’s plant-based calcium does what others can’t — actually stops bone loss. And builds new bone!</p>
+
+        <?php
+          $url = 'https://www.algaecal.com/products/algaecal-plus/';
+          echo ("<a href='$url'>
+            <button class='forward_button'>Click Me</button>
+          </a>")
+        ?>
+        </div>
+        
+      </div>
     <div>
-      <h3>Bone Builder Pack</h3>
-      <a href="https://www.algaecal.com/products/algaecal-plus/">https://www.algaecal.com/products/algaecal-plus/</a>
-    </div>
-    </div>
   </div>
 </body>
 </html>
