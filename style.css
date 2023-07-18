@@ -4,31 +4,49 @@
 
 body {
   text-align: center;
+  background-color: #e5f2ef;
 }
 
 .leftBox {
-  background-color: green;
-  width: 40%;
+  background-color: #013b30;
+  color: white;
+  width: 38%;
   height: 100vh;
   position: absolute;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .contentBox {
   width: 60%;
-  margin-left: 40%;
+  margin-left: 38%;
   padding: 50px;
+  padding-right: 0;
 }
 
 .button {
-  background-color: grey;
+  background-color: white;
   border: none;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  font-weight: bold;
 }
 .button:hover {
+  cursor: pointer;
+  border: 3px solid #027d61;
+}
+
+.back_button {
+  background-color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.back_button:hover {
   cursor: pointer;
   border: 3px solid #027d61;
 }
@@ -36,11 +54,16 @@ body {
 .buttonList {
   display: flex;
   justify-content: space-around;
+  padding-top: 30vh;
 }
 .content {
   animation: fadeInAnimation ease 3s;
   /* animation-iteration-count: 1;
   animation-fill-mode: forwards; */
+}
+
+.item_content {
+  display: flex;
 }
 
 @keyframes fadeInAnimation {
